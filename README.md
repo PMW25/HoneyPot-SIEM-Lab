@@ -1,6 +1,6 @@
 # HoneyPot-SIEM-Lab
 
-Part 1. Setup Azure Subscription
+## Part 1. Setup Azure Subscription
 
 Create Free Azure Subscription: https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account
 
@@ -12,7 +12,7 @@ After your subscription is created, you can login at:
 https://portal.azure.com
 
 
-Part 2. Create the Honey Pot (Azure Virtual Machine)
+## Part 2. Create the Honey Pot (Azure Virtual Machine)
 
 Go to: https://portal.azure.com and search for virtual machines
 
@@ -23,7 +23,7 @@ Go to the Network Security Group for your virtual machine and create a rule that
 Log into your virtual machine and turn off the windows firewall (start -> wf.msc -> properties -> all off)
 
 
-Part 3. Logging into the VM and inspecting logs
+## Part 3. Logging into the VM and inspecting logs
 
 Fail 3 logins as “employee” (or some other username)
 
@@ -37,7 +37,7 @@ Next, we are going to create a central log repository called a LAW
 
 
 
-Part 4. Log Forwarding and KQL
+## Part 4. Log Forwarding and KQL
 
 Create Log Analytics Workspace
 
@@ -54,9 +54,7 @@ Query for logs within the LAW
 
 We can now query the Log analytics workspace as well as the SIEM, sentinel directly, which we will do soon
 
-Note: Querying logs in here is a really important skill that you MUST have if you want to work in security operations. Depending on where you work, you need to know SQL, KQL, or SPL, but these are all basically the same thing. If you know one, you can easily learn the others. Microsoft and Sentinel uses KQL, which you can learn in the Cyber Range https://skool.com/cyber-range, or from here https://kc7cyber.com/ (free)
-
-Tip: The Cyber Range is basically a full production environment with hundreds of users and Virtual Machines in it, which are all producing a ton of logs. It’s a really good place to practice just sifting through logs and seeing what you can see.
+Note: Querying logs in here is a really important skill that you MUST have if you want to work in security operations. Depending on where you work, you need to know SQL, KQL, or SPL, but these are all basically the same thing. If you know one, you can easily learn the others.  
 
 Observe some of your VM logs:
 
@@ -65,7 +63,7 @@ SecurityEvent
 
 (observe architecture)
 
-Part 5. Log Enrichment and Finding Location Data
+## Part 5. Log Enrichment and Finding Location Data
 
 Observe the SecurityEvent logs in the Log Analytics Workspace; there is no location data, only IP address, which we can use to derive the location data.
 
@@ -99,7 +97,7 @@ WindowsEvents
 
 (observe architecture)
 
-Part 6. Attack Map Creation
+## Part 6. Attack Map Creation
 
 Within Sentine, create a new Workbook
 
