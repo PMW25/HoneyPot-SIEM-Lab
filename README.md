@@ -6,7 +6,6 @@ Create Free Azure Subscription: https://azure.microsoft.com/en-us/pricing/purcha
 
 If Azure doesn’t let you create a free account, you can either
 1.	Create a paid subscription and be mindful of shutting down/deleting your resources when you are done, or
-2.	Sign up for the Cyber Range, where you pay a flat fee and get access to Azure, Tenable, Defender for Endpoint, Courses, Labs, Weekly lives, optional Cyber Internship: https://skool.com/cyber-range 
 
 After your subscription is created, you can login at:
 https://portal.azure.com
@@ -16,7 +15,7 @@ https://portal.azure.com
 
 Go to: https://portal.azure.com and search for virtual machines
 
-Create a new Windows 10 virtual machine (choose an appropriate size. If you are in the Cyber Range, the size will be limited. You notice the monthly cost of leaving the VM on 24/7. Be mindful of shutting this off when you are done, or just join the cyber range and we handle the back end expense). Remember the username and password
+Create a new Windows 10 virtual machine. Remember the username and password
 
 Go to the Network Security Group for your virtual machine and create a rule that allows all traffic inbound
 
