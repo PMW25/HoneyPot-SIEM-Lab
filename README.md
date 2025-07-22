@@ -98,7 +98,7 @@ WindowsEvents
 
 ## Part 6. Attack Map Creation
 
-Within Sentine, create a new Workbook
+Within Sentinel, create a new Workbook
 
 Delete the prepopulated elements and add a “Query” element
 
@@ -109,3 +109,39 @@ map.json
 
 Observe the query
 Observe the map settings
+
+
+
+## So to summarize:
+
+🛠️ 1. Provision Azure Resources
+Set up an Azure Log Analytics workspace as your centralized log repository.
+
+Launch a virtual machine (Windows) and expose it to the internet — this will serve as your honeypot to attract attackers. 
+
+🔍 2. Forward Logs to Sentinel
+Connect your VM’s security and system logs to the Sentinel workspace using the Log Analytics agent.
+
+Confirm logs are ingested — you'll see them in the Sentinel portal. 
+
+
+🌐 3. Enrich and Visualize Threats
+Use built-in GeoIP enrichment in Sentinel to tag attacker traffic with their geographical origin.
+
+Generate a map visualization to display where connections (or attacks) are coming from. 
+
+
+🚨 4. Investigate and Query Attacks
+Open Sentinel’s Log Analytics and run Kusto (KQL) queries to identify failed login attempts or suspicious activity.
+
+Use this to build detections and understand attacker behavior. 
+
+📊 5. Build Dashboards
+Create a Sentinel workbook/dashboard showing live attack maps, key metrics (e.g. number of failed logins), and enriched insights.
+
+✅ Final Recap
+You end up with a fully functioning SOC lab: VM honeypot, log ingestion, geo-enrichment, analytic queries, and insight dashboards—all running on a free or trial Azure subscription. Shoutout to Josh Makador for the video tutorial!
+
+https://www.youtube.com/watch?v=g5JL2RIbThM&t=3675s
+
+
