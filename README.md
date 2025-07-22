@@ -112,6 +112,9 @@ Observe the map settings
 
 
 
+
+
+
 ## So to summarize:
 
 🛠️ 1. Provision Azure Resources
@@ -140,7 +143,7 @@ Use this to build detections and understand attacker behavior.
 Create a Sentinel workbook/dashboard showing live attack maps, key metrics (e.g. number of failed logins), and enriched insights.
 
 ✅ Final Recap
-You end up with a fully functioning SOC lab: VM honeypot, log ingestion, geo-enrichment, analytic queries, and insight dashboards—all running on a free or trial Azure subscription. Shoutout to Josh Makador for the video tutorial!
+You end up with a fully functioning SOC lab: VM honeypot, log ingestion, geo-enrichment, analytic queries, and insight dashboards—all running on a free or trial Azure subscription. Shoutout to Josh Makador for the video tutorial below!
 
 https://www.youtube.com/watch?v=g5JL2RIbThM&t=3675s
 
